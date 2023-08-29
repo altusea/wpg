@@ -4,7 +4,8 @@
 package com.example.wpg.db.tables.records;
 
 
-import com.example.wpg.db.tables.Operator;
+import com.example.wpg.db.tables.TOperator;
+import com.example.wpg.db.tables.pojos.OperatorDO;
 
 import org.jooq.Field;
 import org.jooq.Record1;
@@ -22,56 +23,56 @@ public class OperatorRecord extends UpdatableRecordImpl<OperatorRecord> implemen
     private static final long serialVersionUID = 1L;
 
     /**
-     * Setter for <code>wpg.operator.id</code>.
+     * Setter for <code>wpg.operator.id</code>. 工号
      */
     public void setId(String value) {
         set(0, value);
     }
 
     /**
-     * Getter for <code>wpg.operator.id</code>.
+     * Getter for <code>wpg.operator.id</code>. 工号
      */
     public String getId() {
         return (String) get(0);
     }
 
     /**
-     * Setter for <code>wpg.operator.name</code>.
+     * Setter for <code>wpg.operator.name</code>. 姓名
      */
     public void setName(String value) {
         set(1, value);
     }
 
     /**
-     * Getter for <code>wpg.operator.name</code>.
+     * Getter for <code>wpg.operator.name</code>. 姓名
      */
     public String getName() {
         return (String) get(1);
     }
 
     /**
-     * Setter for <code>wpg.operator.tel</code>.
+     * Setter for <code>wpg.operator.tel</code>. 手机号
      */
     public void setTel(String value) {
         set(2, value);
     }
 
     /**
-     * Getter for <code>wpg.operator.tel</code>.
+     * Getter for <code>wpg.operator.tel</code>. 手机号
      */
     public String getTel() {
         return (String) get(2);
     }
 
     /**
-     * Setter for <code>wpg.operator.addr</code>.
+     * Setter for <code>wpg.operator.addr</code>. 地址
      */
     public void setAddr(String value) {
         set(3, value);
     }
 
     /**
-     * Getter for <code>wpg.operator.addr</code>.
+     * Getter for <code>wpg.operator.addr</code>. 地址
      */
     public String getAddr() {
         return (String) get(3);
@@ -102,22 +103,22 @@ public class OperatorRecord extends UpdatableRecordImpl<OperatorRecord> implemen
 
     @Override
     public Field<String> field1() {
-        return Operator.OPERATOR.ID;
+        return TOperator.OPERATOR.ID;
     }
 
     @Override
     public Field<String> field2() {
-        return Operator.OPERATOR.NAME;
+        return TOperator.OPERATOR.NAME;
     }
 
     @Override
     public Field<String> field3() {
-        return Operator.OPERATOR.TEL;
+        return TOperator.OPERATOR.TEL;
     }
 
     @Override
     public Field<String> field4() {
-        return Operator.OPERATOR.ADDR;
+        return TOperator.OPERATOR.ADDR;
     }
 
     @Override
@@ -201,19 +202,34 @@ public class OperatorRecord extends UpdatableRecordImpl<OperatorRecord> implemen
      * Create a detached OperatorRecord
      */
     public OperatorRecord() {
-        super(Operator.OPERATOR);
+        super(TOperator.OPERATOR);
     }
 
     /**
      * Create a detached, initialised OperatorRecord
      */
     public OperatorRecord(String id, String name, String tel, String addr) {
-        super(Operator.OPERATOR);
+        super(TOperator.OPERATOR);
 
         setId(id);
         setName(name);
         setTel(tel);
         setAddr(addr);
         resetChangedOnNotNull();
+    }
+
+    /**
+     * Create a detached, initialised OperatorRecord
+     */
+    public OperatorRecord(OperatorDO value) {
+        super(TOperator.OPERATOR);
+
+        if (value != null) {
+            setId(value.getId());
+            setName(value.getName());
+            setTel(value.getTel());
+            setAddr(value.getAddr());
+            resetChangedOnNotNull();
+        }
     }
 }

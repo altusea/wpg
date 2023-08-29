@@ -4,7 +4,7 @@
 package com.example.wpg.db;
 
 
-import com.example.wpg.db.tables.Operator;
+import com.example.wpg.db.tables.TOperator;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,7 +30,7 @@ public class Wpg extends SchemaImpl {
     /**
      * The table <code>wpg.operator</code>.
      */
-    public final Operator OPERATOR = Operator.OPERATOR;
+    public final TOperator OPERATOR = TOperator.OPERATOR;
 
     /**
      * No further instances allowed
@@ -48,7 +48,7 @@ public class Wpg extends SchemaImpl {
     @Override
     public final List<Table<?>> getTables() {
         return Arrays.asList(
-            Operator.OPERATOR
+            TOperator.OPERATOR
         );
     }
 }

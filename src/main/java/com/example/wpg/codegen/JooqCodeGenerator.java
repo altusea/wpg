@@ -7,6 +7,9 @@ public class JooqCodeGenerator {
 
     public static void main(String[] args) throws Exception {
 
+        Generate generateConfig = new Generate();
+        generateConfig.setPojos(true);
+
         Configuration configuration = new Configuration()
                 .withJdbc(new Jdbc()
                         .withDriver("org.postgresql.Driver")
@@ -14,6 +17,8 @@ public class JooqCodeGenerator {
                         .withUser("postgres")
                         .withPassword("pg1234"))
                 .withGenerator(new Generator()
+                        .withGenerate(generateConfig)
+                        .withStrategy(new Strategy().withName("com.example.wpg.codegen.CustomGeneratorStrategy"))
                         .withDatabase(new Database()
                                 .withName("org.jooq.meta.postgres.PostgresDatabase")
                                 .withIncludes(".*")

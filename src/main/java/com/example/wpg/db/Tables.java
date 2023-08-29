@@ -4,7 +4,7 @@
 package com.example.wpg.db;
 
 
-import com.example.wpg.db.tables.Operator;
+import com.example.wpg.db.tables.TOperator;
 
 
 /**
@@ -16,5 +16,5 @@ public class Tables {
     /**
      * The table <code>wpg.operator</code>.
      */
-    public static final Operator OPERATOR = Operator.OPERATOR;
+    public static final TOperator OPERATOR = TOperator.OPERATOR;
 }

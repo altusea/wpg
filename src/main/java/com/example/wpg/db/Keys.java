@@ -4,7 +4,7 @@
 package com.example.wpg.db;
 
 
-import com.example.wpg.db.tables.Operator;
+import com.example.wpg.db.tables.TOperator;
 import com.example.wpg.db.tables.records.OperatorRecord;
 
 import org.jooq.TableField;
@@ -23,5 +23,5 @@ public class Keys {
     // UNIQUE and PRIMARY KEY definitions
     // -------------------------------------------------------------------------
 
-    public static final UniqueKey<OperatorRecord> OPERATOR_PK = Internal.createUniqueKey(Operator.OPERATOR, DSL.name("operator_pk"), new TableField[] { Operator.OPERATOR.ID }, true);
+    public static final UniqueKey<OperatorRecord> OPERATOR_PK = Internal.createUniqueKey(TOperator.OPERATOR, DSL.name("operator_pk"), new TableField[] { TOperator.OPERATOR.ID }, true);
 }
