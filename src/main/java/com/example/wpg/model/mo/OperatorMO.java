@@ -1,4 +1,4 @@
-package com.example.wpg.model;
+package com.example.wpg.model.mo;
 
 import lombok.Data;
 

@@ -33,6 +33,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
     implementation("org.jooq:jooq-codegen")
+    implementation("io.vavr:vavr:1.0.0-alpha-4")
+    implementation("org.modelmapper:modelmapper:3.1.1")
 
     compileOnly("org.projectlombok:lombok")
 

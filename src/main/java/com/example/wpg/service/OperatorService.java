@@ -1,6 +1,6 @@
 package com.example.wpg.service;
 
-import com.example.wpg.model.OperatorMO;
+import com.example.wpg.model.mo.OperatorMO;
 import com.example.wpg.repo.OperatorRepo;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.example.wpg.repo;
 
 import com.example.wpg.db.tables.records.OperatorRecord;
-import com.example.wpg.model.OperatorMO;
+import com.example.wpg.model.mo.OperatorMO;
 import jakarta.annotation.Resource;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;

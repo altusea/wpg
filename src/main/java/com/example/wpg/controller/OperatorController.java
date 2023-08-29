@@ -1,6 +1,6 @@
 package com.example.wpg.controller;
 
-import com.example.wpg.model.OperatorMO;
+import com.example.wpg.model.mo.OperatorMO;
 import com.example.wpg.service.OperatorService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
