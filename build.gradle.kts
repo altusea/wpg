@@ -35,6 +35,7 @@ dependencies {
     implementation("org.jooq:jooq-codegen")
     implementation("io.vavr:vavr:1.0.0-alpha-4")
     implementation("org.modelmapper:modelmapper:3.1.1")
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
 
     compileOnly("org.projectlombok:lombok")
 
