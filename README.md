@@ -12,14 +12,16 @@ used framework and library
 1. deploy PostgreSQL db with docker
 
     ```shell
-    dockr pull postgres:14.9
+    docker pull postgres:14.9
     docker run --name pg14d9 -e POSTGRES_PASSWORD=pg1234 -p 5432:5432 -d postgres:14.9
     ```
 
 2. init data
 
     ```sql
-    create table operator
+    create schema wpg;
+
+    create table wpg.operator
     (
         id   varchar(20) primary key,
         name varchar(20) not null,
