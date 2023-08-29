@@ -1,7 +1,10 @@
+import org.flywaydb.gradle.task.AbstractFlywayTask
+
 plugins {
     java
     id("org.springframework.boot") version "3.1.3"
     id("io.spring.dependency-management") version "1.1.3"
+    id("org.flywaydb.flyway") version "9.19.0"
 }
 
 group = "com.example"
@@ -9,6 +12,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 configurations {
@@ -59,4 +63,12 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+tasks.withType<AbstractFlywayTask> {
+    cleanDisabled = false
+    url = "jdbc:postgresql://localhost:5432/postgres"
+    user = "postgres"
+    password = "pg1234"
+    schemas = arrayOf("wpg")
 }

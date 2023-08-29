@@ -6,6 +6,7 @@ used framework and library
 
 + spring boot 3.x
 + [jooq](https://www.jooq.org/)
++ flyway
 
 ## env setting
 
@@ -18,19 +19,6 @@ used framework and library
 
 2. init data
 
-    ```sql
-    create schema wpg;
-
-    create table wpg.operator
-    (
-        id   varchar(20) primary key,
-        name varchar(20) not null,
-        tel  varchar(12),
-        addr varchar(40)
-    );
-    
-    insert into operator(id, name, tel, addr)
-    values ('001', 'ada', '111', 'china'),
-           ('002', 'bob', '112', 'china'),
-           ('003', 'jun', '113', 'china');
+    ```shell
+    gradle flywayMigrate -i
     ```
