@@ -2,6 +2,11 @@
 
 > web playground
 
+used framework and library
+
++ spring boot 3.x
++ [jooq](https://www.jooq.org/)
+
 ## env setting
 
 1. deploy PostgreSQL db with docker

@@ -18,9 +18,9 @@ configurations {
 }
 
 repositories {
+    mavenLocal()
     maven { url = uri("https://maven.aliyun.com/repository/public/") }
     maven { url = uri("https://maven.aliyun.com/repository/spring/") }
-    mavenLocal()
     mavenCentral()
 }
 
@@ -34,6 +34,13 @@ dependencies {
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
     implementation("org.jooq:jooq-codegen")
     implementation("io.vavr:vavr:1.0.0-alpha-4")
+    implementation("com.google.guava:guava:32.1.2-jre")
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation("org.apache.commons:commons-lang3:3.13.0")
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
+    implementation("org.apache.commons:commons-collections4:4.4")
+    // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
+    implementation("org.glavo.kala:kala-common:0.67.0")
     implementation("org.modelmapper:modelmapper:3.1.1")
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
 

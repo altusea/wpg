@@ -9,6 +9,9 @@ import okhttp3.ResponseBody;
 
 import java.io.IOException;
 
+/**
+ * reference <a href="https://square.github.io/okhttp/recipes/">source</a>
+ */
 public class HttpUtil {
 
     public static <T> T syncGet(String url, Class<T> holderClazz) throws IOException {
