@@ -20,4 +20,8 @@ public class OperatorService {
     public List<String> listAllId() {
         return operatorRepo.listId();
     }
+
+    public void deleteById(String id) {
+        operatorRepo.deleteById(id);
+    }
 }

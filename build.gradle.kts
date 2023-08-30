@@ -37,7 +37,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
     implementation("org.jooq:jooq-codegen")
-    implementation("io.vavr:vavr:1.0.0-alpha-4")
+    implementation("net.datafaker:datafaker:2.0.1")
     implementation("com.google.guava:guava:32.1.2-jre")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation("org.apache.commons:commons-lang3:3.13.0")

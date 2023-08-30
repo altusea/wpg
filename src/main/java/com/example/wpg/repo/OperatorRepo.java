@@ -4,6 +4,7 @@ import com.example.wpg.db.tables.records.OperatorRecord;
 import com.example.wpg.model.mo.OperatorMO;
 import jakarta.annotation.Resource;
 import org.jooq.DSLContext;
+import org.jooq.Record1;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -27,6 +28,13 @@ public class OperatorRepo {
     }
 
     public List<String> listId() {
-        return context.selectFrom(OPERATOR).fetch(OPERATOR.ID);
+        return context
+                .select(OPERATOR.ID)
+                .from(OPERATOR)
+                .fetch().stream().map(Record1::value1).toList();
+    }
+
+    public void deleteById(String id) {
+        context.delete(OPERATOR).where(OPERATOR.ID.eq(id)).execute();
     }
 }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/operator")
 public class OperatorController {
 
     @Resource
@@ -22,5 +22,10 @@ public class OperatorController {
     @GetMapping("/listAllId")
     public List<String> listAllId() {
         return operatorService.listAllId();
+    }
+
+    @DeleteMapping("/delete")
+    public void delete(@RequestParam("id") String id) {
+        operatorService.deleteById(id);
     }
 }
