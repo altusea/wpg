@@ -24,6 +24,11 @@ public class OperatorController {
         return operatorService.listAllId();
     }
 
+    @GetMapping("/cache")
+    public OperatorMO getFromCache(@RequestParam("key") String key) {
+        return operatorService.getFromCache(key);
+    }
+
     @DeleteMapping("/delete")
     public void delete(@RequestParam("id") String id) {
         operatorService.deleteById(id);

@@ -13,12 +13,20 @@ public class OperatorService {
     @Resource
     private OperatorRepo operatorRepo;
 
+    @Resource
+    private CacheService cacheService;
+
     public void add(OperatorMO operator) {
+        cacheService.saveObj("operator", operator);
         operatorRepo.insert(operator);
     }
 
     public List<String> listAllId() {
         return operatorRepo.listId();
+    }
+
+    public OperatorMO getFromCache(String k) {
+        return cacheService.get(k);
     }
 
     public void deleteById(String id) {

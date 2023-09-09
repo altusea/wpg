@@ -26,7 +26,6 @@ public class HttpUtil {
             }
 
             ResponseBody body = response.body();
-            if (body == null) return null;
             ObjectMapper objectMapper = new ObjectMapper();
             return objectMapper.readValue(body.string(), holderClazz);
         }
