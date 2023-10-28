@@ -1,10 +1,11 @@
 import org.flywaydb.gradle.task.AbstractFlywayTask
+import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "3.1.3"
+    id("org.springframework.boot") version "3.1.5"
     id("io.spring.dependency-management") version "1.1.3"
-    id("org.flywaydb.flyway") version "9.19.0"
+    id("org.flywaydb.flyway") version "9.22.3"
 }
 
 group = "com.example"
@@ -23,8 +24,6 @@ configurations {
 
 repositories {
     mavenLocal()
-    maven { url = uri("https://maven.aliyun.com/repository/public/") }
-    maven { url = uri("https://maven.aliyun.com/repository/spring/") }
     mavenCentral()
 }
 
@@ -39,8 +38,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.kafka:spring-kafka")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
-    implementation("org.jooq:jooq-codegen:3.18.0")
+    implementation("org.jooq:jooq-codegen:3.18.7")
 
     implementation("com.google.guava:guava:32.1.2-jre")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
@@ -53,8 +53,8 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.11")
     implementation("cn.hutool:hutool-all:5.8.22")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.40")
-
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    implementation("commons-io:commons-io:2.13.0")
+    implementation("one.util:streamex:0.8.2")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     runtimeOnly("org.postgresql:postgresql:42.6.0")
@@ -62,6 +62,10 @@ dependencies {
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+tasks.withType<BootJar> {
+    mainClass = "com.example.wpg.WpgApplication"
 }
 
 tasks.withType<Test> {

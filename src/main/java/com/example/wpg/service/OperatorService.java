@@ -18,7 +18,7 @@ public class OperatorService {
 
     public void add(OperatorMO operator) {
         cacheService.saveObj("operator", operator);
-        operatorRepo.insert(operator);
+        operatorRepo.upsert(operator);
     }
 
     public List<String> listAllId() {

@@ -19,12 +19,27 @@ public class OperatorRepo {
 
     public void insert(OperatorMO newOperator) {
         OperatorRecord operatorRecord = new OperatorRecord();
-        operatorRecord.setId(newOperator.getId());
-        operatorRecord.setName(newOperator.getName());
-        operatorRecord.setTel(newOperator.getTel());
-        operatorRecord.setAddr(newOperator.getAddr());
+        operatorRecord.setId(newOperator.id());
+        operatorRecord.setName(newOperator.name());
+        operatorRecord.setTel(newOperator.tel());
+        operatorRecord.setAddr(newOperator.addr());
 
         context.insertInto(OPERATOR).set(operatorRecord).execute();
+    }
+
+    public void upsert(OperatorMO newOperator) {
+        OperatorRecord operatorRecord = new OperatorRecord();
+        operatorRecord.setId(newOperator.id());
+        operatorRecord.setName(newOperator.name());
+        operatorRecord.setTel(newOperator.tel());
+        operatorRecord.setAddr(newOperator.addr());
+
+        context.insertInto(OPERATOR).set(operatorRecord)
+                .onConflict(OPERATOR.ID).doUpdate()
+                .set(OPERATOR.NAME, newOperator.name())
+                .set(OPERATOR.TEL, newOperator.tel())
+                .set(OPERATOR.ADDR, newOperator.addr())
+                .execute();
     }
 
     public List<String> listId() {

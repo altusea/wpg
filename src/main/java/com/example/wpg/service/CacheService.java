@@ -20,4 +20,8 @@ public class CacheService {
     public OperatorMO get(String k) {
         return (OperatorMO) redisTemplate.opsForValue().get(k);
     }
+
+    public Long getTTL(String k) {
+        return redisTemplate.getExpire(k);
+    }
 }
