@@ -3,9 +3,9 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "3.1.5"
-    id("io.spring.dependency-management") version "1.1.3"
-    id("org.flywaydb.flyway") version "9.22.3"
+    id("org.springframework.boot") version "3.2.4"
+    id("io.spring.dependency-management") version "1.1.4"
+    id("org.flywaydb.flyway") version "10.11.0"
 }
 
 group = "com.example"
@@ -24,6 +24,8 @@ configurations {
 
 repositories {
     mavenLocal()
+    maven { url = uri("https://maven.aliyun.com/repository/public/") }
+    maven { url = uri("https://maven.aliyun.com/repository/spring/") }
     mavenCentral()
 }
 
@@ -40,24 +42,24 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.kafka:spring-kafka")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
-    implementation("org.jooq:jooq-codegen:3.18.7")
+    implementation("org.jooq:jooq-codegen:3.18.13")
 
-    implementation("com.google.guava:guava:32.1.2-jre")
+    implementation("com.google.guava:guava:33.1.0-jre")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
-    implementation("org.apache.commons:commons-lang3:3.13.0")
+    implementation("org.apache.commons:commons-lang3:3.14.0")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
     implementation("org.apache.commons:commons-collections4:4.4")
     // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
-    implementation("org.glavo.kala:kala-common:0.67.0")
-    implementation("org.modelmapper:modelmapper:3.1.1")
-    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.11")
-    implementation("cn.hutool:hutool-all:5.8.22")
-    implementation("com.alibaba.fastjson2:fastjson2:2.0.40")
-    implementation("commons-io:commons-io:2.13.0")
-    implementation("one.util:streamex:0.8.2")
+    implementation("org.glavo.kala:kala-common:0.69.0")
+    implementation("org.modelmapper:modelmapper:3.2.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("cn.hutool:hutool-all:5.8.27")
+    implementation("com.alibaba.fastjson2:fastjson2:2.0.48")
+
+    developmentOnly("org.springframework.boot:spring-boot-devtools")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
-    runtimeOnly("org.postgresql:postgresql:42.6.0")
+    runtimeOnly("org.postgresql:postgresql:42.7.3")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
