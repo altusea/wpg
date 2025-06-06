@@ -54,7 +54,7 @@ dependencies {
     implementation("org.modelmapper:modelmapper:3.2.3")
     implementation("org.dromara.hutool:hutool-all:6.0.0-M7")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
-    implementation("commons-io:commons-io:2.17.0")
+    implementation("commons-io:commons-io:2.19.0")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     runtimeOnly("org.postgresql:postgresql:42.7.4")
