@@ -12,8 +12,8 @@ group = "com.example"
 version = "1.0.0"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_24
+    targetCompatibility = JavaVersion.VERSION_24
 }
 
 configurations {
@@ -42,22 +42,23 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.kafka:spring-kafka")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
-    implementation("org.jooq:jooq-codegen:3.19.14")
+    implementation("org.jooq:jooq-codegen:3.19.23")
 
     implementation("com.google.guava:guava:33.4.8-jre")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation("org.apache.commons:commons-lang3:3.17.0")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
-    implementation("org.apache.commons:commons-collections4:4.4")
+    implementation("org.apache.commons:commons-collections4:4.5.0")
     // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
-    implementation("org.glavo.kala:kala-common:0.74.0")
+    implementation("org.glavo.kala:kala-common:0.82.0")
     implementation("org.modelmapper:modelmapper:3.2.3")
-    implementation("org.dromara.hutool:hutool-all:6.0.0-M7")
+    implementation("org.dromara.hutool:hutool-all:6.0.0-M21")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.8.0")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
-    runtimeOnly("org.postgresql:postgresql:42.7.4")
+    runtimeOnly("org.postgresql:postgresql:42.7.6")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
