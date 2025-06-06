@@ -53,7 +53,7 @@ dependencies {
     implementation("org.glavo.kala:kala-common:0.74.0")
     implementation("org.modelmapper:modelmapper:3.2.1")
     implementation("org.dromara.hutool:hutool-all:6.0.0-M7")
-    implementation("com.alibaba.fastjson2:fastjson2:2.0.53")
+    implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.17.0")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
