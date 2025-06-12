@@ -58,7 +58,7 @@ dependencies {
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.0")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
-    runtimeOnly("org.postgresql:postgresql:42.7.6")
+    runtimeOnly("org.postgresql:postgresql:42.7.7")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
