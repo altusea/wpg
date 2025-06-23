@@ -51,7 +51,7 @@ dependencies {
     implementation("org.apache.commons:commons-collections4:4.5.0")
     // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
     implementation("org.glavo.kala:kala-common:0.82.0")
-    implementation("org.modelmapper:modelmapper:3.2.3")
+    implementation("org.modelmapper:modelmapper:3.2.4")
     implementation("org.dromara.hutool:hutool-all:6.0.0-M21")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
