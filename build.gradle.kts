@@ -42,7 +42,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.kafka:spring-kafka")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
-    implementation("org.jooq:jooq-codegen:3.19.23")
+    implementation("org.jooq:jooq-codegen:3.19.24")
 
     implementation("com.google.guava:guava:33.4.8-jre")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
@@ -52,7 +52,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
     implementation("org.glavo.kala:kala-common:0.82.0")
     implementation("org.modelmapper:modelmapper:3.2.4")
-    implementation("org.dromara.hutool:hutool-all:6.0.0-M21")
+    implementation("org.dromara.hutool:hutool-all:6.0.0-M22")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.0")
