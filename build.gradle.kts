@@ -45,6 +45,7 @@ dependencies {
     implementation("org.jooq:jooq-codegen:3.19.24")
 
     implementation("com.google.guava:guava:33.4.8-jre")
+    implementation("com.google.code.gson:gson")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation("org.apache.commons:commons-lang3:3.17.0")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
