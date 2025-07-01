@@ -56,6 +56,7 @@ dependencies {
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.0")
+    implementation("org.redisson:redisson-spring-boot-starter:3.50.0")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     runtimeOnly("org.postgresql:postgresql:42.7.7")
