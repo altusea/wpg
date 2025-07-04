@@ -42,7 +42,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.kafka:spring-kafka")
     // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
-    implementation("org.jooq:jooq-codegen:3.19.24")
+    implementation("org.jooq:jooq-codegen:3.20.5")
 
     implementation("com.google.guava:guava:33.4.8-jre")
     implementation("com.google.code.gson:gson")
