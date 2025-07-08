@@ -53,7 +53,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
     implementation("org.glavo.kala:kala-common:0.82.0")
     implementation("org.modelmapper:modelmapper:3.2.4")
-    implementation("org.dromara.hutool:hutool-all:6.0.0-M22")
+    implementation("org.dromara.hutool:hutool-all:6.0.0.M3")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
