@@ -56,7 +56,7 @@ dependencies {
     implementation("org.dromara.hutool:hutool-all:6.0.0-M22")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
-    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.0")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
     implementation("org.redisson:redisson-spring-boot-starter:3.50.0")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
