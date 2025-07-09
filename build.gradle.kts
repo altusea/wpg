@@ -59,6 +59,8 @@ dependencies {
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
     implementation("org.redisson:redisson-spring-boot-starter:3.50.0")
 
+    implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
+
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     runtimeOnly("org.postgresql:postgresql:42.7.7")
 
