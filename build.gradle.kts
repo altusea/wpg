@@ -47,7 +47,7 @@ dependencies {
     implementation("com.google.guava:guava:33.4.8-jre")
     implementation("com.google.code.gson:gson")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
-    implementation("org.apache.commons:commons-lang3:3.17.0")
+    implementation("org.apache.commons:commons-lang3:3.18.0")
     // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
     implementation("org.apache.commons:commons-collections4:4.5.0")
     // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
