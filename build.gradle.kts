@@ -30,38 +30,30 @@ repositories {
 }
 
 dependencies {
-    // spring
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jooq
     implementation("org.springframework.boot:spring-boot-starter-jooq")
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
     implementation("org.springframework.boot:spring-boot-starter-validation")
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.kafka:spring-kafka")
-    // https://mvnrepository.com/artifact/org.jooq/jooq-codegen
     implementation("org.jooq:jooq-codegen:3.19.24")
+
+    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
+    implementation("org.redisson:redisson-spring-boot-starter:3.50.0")
+    implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
 
     implementation("com.google.guava:guava:33.4.8-jre")
     implementation("com.google.code.gson:gson")
-    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation("org.apache.commons:commons-lang3:3.18.0")
-    // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
     implementation("org.apache.commons:commons-collections4:4.5.0")
-    // https://mvnrepository.com/artifact/org.glavo.kala/kala-common
     implementation("org.glavo.kala:kala-common:0.82.0")
     implementation("org.modelmapper:modelmapper:3.2.4")
     implementation("org.dromara.hutool:hutool-all:6.0.0-M22")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.19.0")
-    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
-    implementation("org.redisson:redisson-spring-boot-starter:3.50.0")
+    implementation("com.github.houbb:sensitive-word:0.27.0")
 
-    implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
-
-    // https://mvnrepository.com/artifact/org.postgresql/postgresql
     runtimeOnly("org.postgresql:postgresql:42.7.7")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
