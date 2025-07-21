@@ -51,7 +51,7 @@ dependencies {
     implementation("org.modelmapper:modelmapper:3.2.4")
     implementation("org.dromara.hutool:hutool-all:6.0.0-M22")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
-    implementation("commons-io:commons-io:2.19.0")
+    implementation("commons-io:commons-io:2.20.0")
     implementation("com.github.houbb:sensitive-word:0.27.0")
 
     runtimeOnly("org.postgresql:postgresql:42.7.7")
