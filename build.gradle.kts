@@ -55,6 +55,7 @@ dependencies {
     implementation("com.github.houbb:sensitive-word:0.27.0")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.1.0")
     implementation("com.j2html:j2html:1.6.0")
+    implementation("dev.failsafe:failsafe:3.3.2")
 
     runtimeOnly("org.postgresql:postgresql:42.7.7")
 
