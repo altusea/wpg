@@ -53,6 +53,8 @@ dependencies {
     implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
     implementation("commons-io:commons-io:2.20.0")
     implementation("com.github.houbb:sensitive-word:0.27.0")
+    implementation("com.fasterxml.uuid:java-uuid-generator:5.1.0")
+    implementation("com.j2html:j2html:1.6.0")
 
     runtimeOnly("org.postgresql:postgresql:42.7.7")
 
