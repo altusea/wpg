@@ -50,7 +50,7 @@ dependencies {
     implementation("org.glavo.kala:kala-common:0.82.0")
     implementation("org.modelmapper:modelmapper:3.2.4")
     implementation("cn.hutool.v7:hutool-all:7.0.0-M1")
-    implementation("com.alibaba.fastjson2:fastjson2:2.0.57")
+    implementation("com.alibaba.fastjson2:fastjson2:2.0.58")
     implementation("commons-io:commons-io:2.20.0")
     implementation("com.github.houbb:sensitive-word:0.27.1")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.1.0")
