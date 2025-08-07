@@ -3,7 +3,7 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "3.5.4"
+    id("org.springframework.boot") version "4.0.0-M1"
     id("io.spring.dependency-management") version "1.1.7"
     id("org.flywaydb.flyway") version "11.10.5"
 }
@@ -23,8 +23,8 @@ configurations {
 }
 
 repositories {
-//    maven { url = uri("https://maven.aliyun.com/repository/public/") }
-//    maven { url = uri("https://maven.aliyun.com/repository/spring/") }
+    maven { url = uri("https://maven.aliyun.com/repository/public/") }
+    maven { url = uri("https://maven.aliyun.com/repository/spring/") }
     mavenLocal()
     mavenCentral()
 }
