@@ -15,7 +15,7 @@ public class JooqCodeGenerator {
                         .withDriver("org.postgresql.Driver")
                         .withUrl("jdbc:postgresql://localhost:5432/postgres")
                         .withUser("postgres")
-                        .withPassword("pg1234"))
+                        .withPassword("whatever"))
                 .withGenerator(new Generator()
                         .withGenerate(generateConfig)
                         .withStrategy(new Strategy().withName("com.example.wpg.codegen.CustomGeneratorStrategy"))
