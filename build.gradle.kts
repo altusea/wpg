@@ -30,6 +30,8 @@ repositories {
 }
 
 dependencies {
+    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc6"))
+
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-jooq")
@@ -58,6 +60,8 @@ dependencies {
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.2.0")
     implementation("com.baomidou:mybatis-plus-core:3.5.12")
+    implementation("tools.jackson.core:jackson-core")
+    implementation("tools.jackson.core:jackson-databind")
 
     runtimeOnly("org.postgresql:postgresql:42.7.7")
 
