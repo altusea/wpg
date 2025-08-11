@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc6"))
+    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc7"))
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -42,7 +42,6 @@ dependencies {
     implementation("org.jooq:jooq-codegen:3.19.24")
 
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
-    implementation("org.redisson:redisson-spring-boot-starter:3.50.0")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
 
     implementation("com.google.guava:guava:33.4.8-jre")
