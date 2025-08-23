@@ -3,7 +3,7 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "4.0.0-M1"
+    id("org.springframework.boot") version "4.0.0-M2"
     id("io.spring.dependency-management") version "1.1.7"
     id("org.flywaydb.flyway") version "11.10.5"
 }
@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc7"))
+    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc8"))
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -41,14 +41,14 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka")
     implementation("org.jooq:jooq-codegen:3.19.24")
 
-    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.9.2")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:6.10.0")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
 
     implementation("com.google.guava:guava:33.4.8-jre")
     implementation("com.google.code.gson:gson")
     implementation("org.apache.commons:commons-lang3:3.18.0")
     implementation("org.apache.commons:commons-collections4:4.5.0")
-    implementation("org.glavo.kala:kala-common:0.82.0")
+    implementation("org.glavo.kala:kala-common:0.83.0")
     implementation("org.modelmapper:modelmapper:3.2.4")
     implementation("cn.hutool.v7:hutool-all:7.0.0-M1")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.58")
