@@ -56,7 +56,7 @@ dependencies {
     implementation("com.fasterxml.uuid:java-uuid-generator:5.1.0")
     implementation("com.j2html:j2html:1.6.0")
     implementation("dev.failsafe:failsafe:3.3.2")
-    implementation("cn.idev.excel:fastexcel:1.2.0")
+    implementation("cn.idev.excel:fastexcel:1.3.0")
     implementation("com.baomidou:mybatis-plus-core:3.5.12")
 
     runtimeOnly("org.postgresql:postgresql:42.7.7")
