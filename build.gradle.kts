@@ -58,7 +58,8 @@ dependencies {
     implementation("org.joda:joda-money:2.0.2")
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.3.0")
-    implementation("com.baomidou:mybatis-plus-core:3.5.12")
+    implementation("com.baomidou:mybatis-plus-core:3.5.14")
+    implementation("net.logstash.logback:logstash-logback-encoder:8.1")
 
     runtimeOnly("org.postgresql:postgresql:42.7.7")
 
