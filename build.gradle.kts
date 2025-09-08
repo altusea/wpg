@@ -52,7 +52,7 @@ dependencies {
     implementation("cn.hutool.v7:hutool-all:7.0.0-M1")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.58")
     implementation("commons-io:commons-io:2.20.0")
-    implementation("com.github.houbb:sensitive-word:0.29.0")
+    implementation("com.github.houbb:sensitive-word:0.29.3")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.1.0")
     implementation("com.j2html:j2html:1.6.0")
     implementation("org.joda:joda-money:2.0.2")
