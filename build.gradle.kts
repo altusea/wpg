@@ -58,7 +58,7 @@ dependencies {
     implementation("com.j2html:j2html:1.6.0")
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.3.0")
-    implementation("com.baomidou:mybatis-plus-core:3.5.12")
+    implementation("com.baomidou:mybatis-plus-core:3.5.14")
     implementation("tools.jackson.core:jackson-core")
     implementation("tools.jackson.core:jackson-databind")
 
