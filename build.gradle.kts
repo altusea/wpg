@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc9"))
+    implementation(platform("tools.jackson:jackson-bom:3.0.0-rc10"))
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
