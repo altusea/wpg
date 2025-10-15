@@ -49,7 +49,7 @@ dependencies {
     implementation("org.apache.commons:commons-collections4:4.5.0")
     implementation("org.glavo.kala:kala-common:0.84.0")
     implementation("org.modelmapper:modelmapper:3.2.5")
-    implementation("cn.hutool.v7:hutool-all:7.0.0-M1")
+    implementation("cn.hutool.v7:hutool-all:7.0.0-M2")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.59")
     implementation("commons-io:commons-io:2.20.0")
     implementation("com.github.houbb:sensitive-word:0.29.3")
