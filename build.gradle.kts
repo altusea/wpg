@@ -45,7 +45,7 @@ dependencies {
 
     implementation("com.google.guava:guava:33.5.0-jre")
     implementation("com.google.code.gson:gson")
-    implementation("org.apache.commons:commons-lang3:3.19.0")
+    implementation("org.apache.commons:commons-lang3:3.20.0")
     implementation("org.apache.commons:commons-collections4:4.5.0")
     implementation("org.glavo.kala:kala-common:0.85.0")
     implementation("org.modelmapper:modelmapper:3.2.6")
