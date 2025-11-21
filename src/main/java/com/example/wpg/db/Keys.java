@@ -16,12 +16,12 @@ import org.jooq.impl.Internal;
 /**
  * A class modelling foreign key relationships and constraints of tables in wpg.
  */
-@SuppressWarnings({ "all", "unchecked", "rawtypes" })
+@SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class Keys {
 
     // -------------------------------------------------------------------------
     // UNIQUE and PRIMARY KEY definitions
     // -------------------------------------------------------------------------
 
-    public static final UniqueKey<OperatorRecord> OPERATOR_PK = Internal.createUniqueKey(TOperator.OPERATOR, DSL.name("operator_pk"), new TableField[] { TOperator.OPERATOR.ID }, true);
+    public static final UniqueKey<OperatorRecord> OPERATOR_PKEY = Internal.createUniqueKey(TOperator.OPERATOR, DSL.name("operator_pkey"), new TableField[] { TOperator.OPERATOR.ID }, true);
 }

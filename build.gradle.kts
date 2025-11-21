@@ -3,7 +3,7 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "3.5.7"
+    id("org.springframework.boot") version "4.0.0-RC2"
     id("io.spring.dependency-management") version "1.1.7"
     id("org.flywaydb.flyway") version "11.17.1"
 }
@@ -58,13 +58,13 @@ dependencies {
     implementation("org.joda:joda-money:2.0.2")
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.3.0")
-    implementation("io.netty:netty-all:4.1.127.Final")
+    implementation("io.netty:netty-all:4.2.7.Final")
     implementation("com.baomidou:mybatis-plus-core:3.5.14")
     implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 
     runtimeOnly("org.postgresql:postgresql:42.7.8")
 
-    annotationProcessor("org.projectlombok:lombok:1.18.42")
+    annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")

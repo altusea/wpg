@@ -4,14 +4,20 @@
 package com.example.wpg.db;
 
 
+import com.example.wpg.db.tables.TOperationLog;
 import com.example.wpg.db.tables.TOperator;
 
 
 /**
  * Convenience access to all tables in wpg.
  */
-@SuppressWarnings({ "all", "unchecked", "rawtypes" })
+@SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class Tables {
+
+    /**
+     * The table <code>wpg.operation_log</code>.
+     */
+    public static final TOperationLog OPERATION_LOG = TOperationLog.OPERATION_LOG;
 
     /**
      * The table <code>wpg.operator</code>.

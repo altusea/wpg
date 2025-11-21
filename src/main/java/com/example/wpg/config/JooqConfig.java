@@ -1,7 +1,7 @@
 package com.example.wpg.config;
 
 import org.jooq.conf.RenderQuotedNames;
-import org.springframework.boot.autoconfigure.jooq.DefaultConfigurationCustomizer;
+import org.springframework.boot.jooq.autoconfigure.DefaultConfigurationCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
