@@ -59,7 +59,7 @@ dependencies {
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.3.0")
     implementation("io.netty:netty-all:4.2.7.Final")
-    implementation("com.baomidou:mybatis-plus-core:3.5.14")
+    implementation("com.baomidou:mybatis-plus-core:3.5.15")
     implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 
     runtimeOnly("org.postgresql:postgresql:42.7.8")
