@@ -53,7 +53,7 @@ dependencies {
     implementation("com.alibaba.fastjson2:fastjson2:2.0.60")
     implementation("commons-io:commons-io:2.21.0")
     implementation("com.github.houbb:sensitive-word:0.29.3")
-    implementation("com.fasterxml.uuid:java-uuid-generator:5.1.1")
+    implementation("com.fasterxml.uuid:java-uuid-generator:5.2.0")
     implementation("com.j2html:j2html:1.6.0")
     implementation("org.joda:joda-money:2.0.2")
     implementation("dev.failsafe:failsafe:3.3.2")
