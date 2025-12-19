@@ -39,7 +39,7 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka")
     implementation("org.jooq:jooq-codegen:3.20.10")
 
-    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.3.0")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.4.0")
     implementation("org.redisson:redisson-spring-boot-starter:4.0.0")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
 
