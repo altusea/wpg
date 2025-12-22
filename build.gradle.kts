@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.example"
-version = "1.0.0"
+version = "2025.12.0"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_25
@@ -47,6 +47,7 @@ dependencies {
     implementation("com.google.code.gson:gson")
     implementation("org.apache.commons:commons-lang3:3.20.0")
     implementation("org.apache.commons:commons-collections4:4.5.0")
+    implementation("org.apache.httpcomponents.client5:httpclient5-fluent:5.6")
     implementation("org.glavo.kala:kala-common:0.85.0")
     implementation("org.modelmapper:modelmapper:3.2.6")
     implementation("cn.hutool.v7:hutool-all:7.0.0-M3")
