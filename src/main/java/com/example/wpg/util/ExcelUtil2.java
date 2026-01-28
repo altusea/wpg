@@ -1,16 +1,16 @@
 package com.example.wpg.util;
 
+import cn.idev.excel.FastExcel;
+import cn.idev.excel.annotation.ExcelIgnore;
+import cn.idev.excel.annotation.ExcelProperty;
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.fesod.sheet.FesodSheet;
-import org.apache.fesod.sheet.annotation.ExcelIgnore;
-import org.apache.fesod.sheet.annotation.ExcelProperty;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ExcelUtil {
+public class ExcelUtil2 {
 
     @Getter
     @Setter
@@ -42,6 +42,6 @@ public class ExcelUtil {
     static void main(String[] args) {
         String fileName = "demo.xlsx";
         // Create a "Template" sheet and write data
-        FesodSheet.write(fileName, DemoData.class).sheet("Template").doWrite(data());
+        FastExcel.write(fileName, DemoData.class).sheet("Template").doWrite(data());
     }
 }
