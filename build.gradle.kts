@@ -37,7 +37,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.kafka:spring-kafka")
-    implementation("org.jooq:jooq-codegen:3.21.0")
+    implementation("org.jooq:jooq-codegen:3.21.1")
 
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.7.0")
     implementation("org.redisson:redisson-spring-boot-starter:4.3.0")
