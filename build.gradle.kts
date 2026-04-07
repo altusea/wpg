@@ -40,7 +40,7 @@ dependencies {
     implementation("org.jooq:jooq-codegen:3.21.1")
 
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.7.0")
-    implementation("org.redisson:redisson-spring-boot-starter:4.3.0")
+    implementation("org.redisson:redisson-spring-boot-starter:4.3.1")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
 
     implementation("com.google.guava:guava:33.5.0-jre")
