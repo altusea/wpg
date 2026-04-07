@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.example"
-version = "2026.3.0"
+version = "2026.4.0"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_25
@@ -36,7 +36,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
-    implementation("org.springframework.kafka:spring-kafka")
+    implementation("org.springframework.boot:spring-boot-starter-kafka")
     implementation("org.jooq:jooq-codegen:3.21.1")
 
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.7.0")
@@ -51,7 +51,7 @@ dependencies {
     implementation("org.glavo.kala:kala-common:0.85.0")
     implementation("org.modelmapper:modelmapper:3.2.6")
     implementation("cn.hutool.v7:hutool-all:7.0.0-M5")
-    implementation("com.alibaba.fastjson2:fastjson2:2.0.61")
+    implementation("com.alibaba.fastjson2:fastjson2-extension-spring6:2.0.61")
     implementation("commons-io:commons-io:2.21.0")
     implementation("com.github.houbb:sensitive-word:0.29.5")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.2.0")
