@@ -43,7 +43,7 @@ dependencies {
     implementation("org.redisson:redisson-spring-boot-starter:4.3.1")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:2.1.1")
 
-    implementation("com.google.guava:guava:33.5.0-jre")
+    implementation("com.google.guava:guava:33.6.0-jre")
     implementation("com.google.code.gson:gson")
     implementation("org.apache.commons:commons-lang3:3.20.0")
     implementation("org.apache.commons:commons-collections4:4.5.0")
