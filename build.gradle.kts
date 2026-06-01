@@ -41,7 +41,7 @@ dependencies {
 
     implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.7.0")
     implementation("org.redisson:redisson-spring-boot-starter:4.4.0")
-    implementation("com.github.pagehelper:pagehelper-spring-boot-starter:4.0.0")
+    implementation("com.github.pagehelper:pagehelper-spring-boot-starter:4.1.0")
 
     implementation("com.google.guava:guava:33.6.0-jre")
     implementation("com.google.code.gson:gson")
