@@ -17,13 +17,14 @@ import org.jooq.PlainSQL;
 import org.jooq.QueryPart;
 import org.jooq.SQL;
 import org.jooq.Schema;
-import org.jooq.Select;
 import org.jooq.Stringly;
 import org.jooq.Table;
 import org.jooq.TableField;
+import org.jooq.TableLike;
 import org.jooq.TableOptions;
 import org.jooq.UniqueKey;
 import org.jooq.impl.DSL;
+import org.jooq.impl.Internal;
 import org.jooq.impl.SQLDataType;
 import org.jooq.impl.TableImpl;
 
@@ -152,7 +153,7 @@ public class TOperator extends TableImpl<OperatorRecord> {
      */
     @Override
     public TOperator where(Condition condition) {
-        return new TOperator(getQualifiedName(), aliased() ? this : null, null, condition);
+        return new TOperator(getQualifiedName(), aliased() ? this : null, null, Internal.condition(this, condition));
     }
 
     /**
@@ -219,7 +220,7 @@ public class TOperator extends TableImpl<OperatorRecord> {
      * Create an inline derived table from this table
      */
     @Override
-    public TOperator whereExists(Select<?> select) {
+    public TOperator whereExists(TableLike<?> select) {
         return where(DSL.exists(select));
     }
 
@@ -227,7 +228,7 @@ public class TOperator extends TableImpl<OperatorRecord> {
      * Create an inline derived table from this table
      */
     @Override
-    public TOperator whereNotExists(Select<?> select) {
+    public TOperator whereNotExists(TableLike<?> select) {
         return where(DSL.notExists(select));
     }
 }

@@ -82,7 +82,7 @@ public class OperationLogRecord extends TableRecordImpl<OperationLogRecord> {
         setOperationTime(operationTime);
         setOperator(operator);
         setOperationType(operationType);
-        resetChangedOnNotNull();
+        resetTouchedOnNotNull();
     }
 
     /**
@@ -95,7 +95,7 @@ public class OperationLogRecord extends TableRecordImpl<OperationLogRecord> {
             setOperationTime(value.getOperationTime());
             setOperator(value.getOperator());
             setOperationType(value.getOperationType());
-            resetChangedOnNotNull();
+            resetTouchedOnNotNull();
         }
     }
 }

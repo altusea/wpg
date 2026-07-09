@@ -12,6 +12,7 @@ import java.util.List;
 
 import org.jooq.Catalog;
 import org.jooq.Table;
+import org.jooq.impl.DSL;
 import org.jooq.impl.SchemaImpl;
 
 
@@ -42,7 +43,7 @@ public class Wpg extends SchemaImpl {
      * No further instances allowed
      */
     private Wpg() {
-        super("wpg", null);
+        super(DSL.name("wpg"), null, DSL.comment(""));
     }
 
 

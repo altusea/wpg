@@ -105,7 +105,7 @@ public class OperatorRecord extends UpdatableRecordImpl<OperatorRecord> {
         setName(name);
         setTel(tel);
         setAddr(addr);
-        resetChangedOnNotNull();
+        resetTouchedOnNotNull();
     }
 
     /**
@@ -119,7 +119,7 @@ public class OperatorRecord extends UpdatableRecordImpl<OperatorRecord> {
             setName(value.getName());
             setTel(value.getTel());
             setAddr(value.getAddr());
-            resetChangedOnNotNull();
+            resetTouchedOnNotNull();
         }
     }
 }
