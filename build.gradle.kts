@@ -31,7 +31,7 @@ repositories {
 
 buildscript {
     dependencies {
-        classpath("org.flywaydb:flyway-database-postgresql:12.11.0")
+        classpath("org.flywaydb:flyway-database-postgresql:13.0.0")
     }
 }
 
