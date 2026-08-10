@@ -3,6 +3,7 @@ package com.example.wpg.service;
 import com.example.wpg.model.mo.OperatorMO;
 import jakarta.annotation.Resource;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.types.Expiration;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,7 @@ public class CacheService {
     RedisTemplate<String, Object> redisTemplate;
 
     public void saveObj(String k, Object v) {
-        redisTemplate.opsForValue().set(k, v, 5, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set(k, v, Expiration.from(5, TimeUnit.MINUTES));
     }
 
     public OperatorMO get(String k) {
