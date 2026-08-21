@@ -3,7 +3,7 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "4.1.0"
+    id("org.springframework.boot") version "4.1.1"
     id("io.spring.dependency-management") version "1.1.7"
     id("org.flywaydb.flyway") version "13.3.0"
 }
@@ -49,7 +49,7 @@ dependencies {
     implementation("org.redisson:redisson-spring-boot-starter:4.7.0")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:4.1.1")
 
-    implementation("com.google.guava:guava:33.7.0-jre")
+    implementation("com.google.guava:guava:33.7.1-jre")
     implementation("com.google.code.gson:gson:2.14.0")
     implementation("org.apache.commons:commons-lang3:3.20.0")
     implementation("org.apache.commons:commons-collections4:4.6.0")
