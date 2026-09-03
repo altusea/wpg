@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.example"
-version = "2026.8.0"
+version = "2026.9.0"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_26
@@ -57,7 +57,7 @@ dependencies {
     implementation("org.glavo.kala:kala-common:0.85.0")
     implementation("org.modelmapper:modelmapper:3.2.6")
     implementation("cn.hutool.v7:hutool-all:7.0.0-M7")
-    implementation("com.alibaba.fastjson2:fastjson2-extension-spring6:2.0.61")
+    implementation("com.alibaba.fastjson2:fastjson2-extension-spring6:2.0.65")
     implementation("commons-io:commons-io:2.22.0")
     implementation("com.github.houbb:sensitive-word:0.29.5")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.2.0")
