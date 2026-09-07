@@ -5,7 +5,7 @@ plugins {
     java
     id("org.springframework.boot") version "4.1.1"
     id("io.spring.dependency-management") version "1.1.7"
-    id("org.flywaydb.flyway") version "13.4.0"
+    id("org.flywaydb.flyway") version "13.5.0"
 }
 
 group = "com.example"
@@ -31,7 +31,7 @@ repositories {
 
 buildscript {
     dependencies {
-        classpath("org.flywaydb:flyway-database-postgresql:13.4.0")
+        classpath("org.flywaydb:flyway-database-postgresql:13.5.0")
     }
 }
 
