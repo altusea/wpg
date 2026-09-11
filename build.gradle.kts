@@ -45,7 +45,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-kafka")
     implementation("org.jooq:jooq-codegen:3.21.7")
 
-    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.10.0")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.10.1")
     implementation("org.redisson:redisson-spring-boot-starter:4.7.0")
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:4.1.1")
 
@@ -66,7 +66,7 @@ dependencies {
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.3.0")
     implementation("org.apache.fesod:fesod-sheet:2.0.2-incubating")
-    implementation("io.netty:netty-all:4.2.17.Final")
+    implementation("io.netty:netty-all:4.2.18.Final")
     implementation("com.baomidou:mybatis-plus-core:3.5.17")
     implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 
