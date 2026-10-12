@@ -71,7 +71,7 @@ dependencies {
     implementation("com.baomidou:mybatis-plus-core:3.5.17")
     implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 
-    runtimeOnly("org.postgresql:postgresql:42.7.13")
+    runtimeOnly("org.postgresql:postgresql:42.7.14")
 
     annotationProcessor("org.projectlombok:lombok:1.18.48")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
