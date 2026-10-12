@@ -67,7 +67,7 @@ dependencies {
     implementation("dev.failsafe:failsafe:3.3.2")
     implementation("cn.idev.excel:fastexcel:1.3.0")
     implementation("org.apache.fesod:fesod-sheet:2.1.0-incubating")
-    implementation("io.netty:netty-all:4.2.18.Final")
+    implementation("io.netty:netty-all:4.2.19.Final")
     implementation("com.baomidou:mybatis-plus-core:3.5.17")
     implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 
