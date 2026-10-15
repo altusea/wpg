@@ -56,7 +56,7 @@ dependencies {
     implementation("org.apache.httpcomponents.client5:httpclient5-fluent:5.6.5")
     implementation("org.glavo.kala:kala-common:0.85.0")
     implementation("org.modelmapper:modelmapper:3.2.6")
-    implementation("cn.hutool.v7:hutool-all:7.0.0-M7")
+    implementation("cn.hutool.v7:hutool-all:7.0.0-M8")
     implementation("com.alibaba.fastjson2:fastjson2-extension-spring6:2.0.65")
     implementation("org.apache.fory:fory-json:1.7.6")
     implementation("commons-io:commons-io:2.22.0")
