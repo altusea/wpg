@@ -58,7 +58,7 @@ dependencies {
     implementation("org.modelmapper:modelmapper:3.2.7")
     implementation("cn.hutool.v7:hutool-all:7.0.0-M8")
     implementation("com.alibaba.fastjson2:fastjson2-extension-spring6:2.0.65")
-    implementation("org.apache.fory:fory-json:1.7.6")
+    implementation("org.apache.fory:fory-json:1.7.7")
     implementation("commons-io:commons-io:2.22.0")
     implementation("com.github.houbb:sensitive-word:0.29.5")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.2.0")
