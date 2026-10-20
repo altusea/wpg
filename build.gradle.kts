@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.example"
-version = "2026.9.0"
+version = "2026.10.0"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_27
