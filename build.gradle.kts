@@ -50,7 +50,7 @@ dependencies {
     implementation("com.github.pagehelper:pagehelper-spring-boot-starter:4.1.1")
 
     implementation("com.google.guava:guava:33.7.2-jre")
-    implementation("com.google.code.gson:gson:2.14.0")
+    implementation("com.google.code.gson:gson:2.15.0")
     implementation("org.apache.commons:commons-lang3:3.21.0")
     implementation("org.apache.commons:commons-collections4:4.6.0")
     implementation("org.apache.httpcomponents.client5:httpclient5-fluent:5.6.5")
