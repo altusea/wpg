@@ -68,7 +68,7 @@ dependencies {
     implementation("cn.idev.excel:fastexcel:1.3.0")
     implementation("org.apache.fesod:fesod-sheet:2.1.0-incubating")
     implementation("io.netty:netty-all:4.2.19.Final")
-    implementation("com.baomidou:mybatis-plus-core:3.5.17")
+    implementation("com.baomidou:mybatis-plus-core:3.5.18.1")
     implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 
     runtimeOnly("org.postgresql:postgresql:42.7.14")
