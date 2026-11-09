@@ -3,9 +3,9 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     java
-    id("org.springframework.boot") version "4.1.2"
-    id("io.spring.dependency-management") version "1.1.7"
-    id("org.flywaydb.flyway") version "13.12.1"
+    alias(libs.plugins.spring.boot)
+    alias(libs.plugins.spring.dependency.management)
+    alias(libs.plugins.flyway)
 }
 
 group = "com.example"
@@ -31,52 +31,52 @@ repositories {
 
 buildscript {
     dependencies {
-        classpath("org.flywaydb:flyway-database-postgresql:13.12.1")
+        classpath(libs.flyway.database.postgresql)
     }
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-webmvc")
-    implementation("org.springframework.boot:spring-boot-starter-jooq")
-    implementation("org.springframework.boot:spring-boot-starter-validation")
-    implementation("org.springframework.boot:spring-boot-starter-data-redis")
-    implementation("org.springframework.boot:spring-boot-starter-actuator")
-    implementation("org.springframework.boot:spring-boot-starter-kafka")
-    implementation("org.jooq:jooq-codegen:3.21.9")
+    implementation(libs.spring.boot.starter.data.jpa)
+    implementation(libs.spring.boot.starter.webmvc)
+    implementation(libs.spring.boot.starter.jooq)
+    implementation(libs.spring.boot.starter.validation)
+    implementation(libs.spring.boot.starter.data.redis)
+    implementation(libs.spring.boot.starter.actuator)
+    implementation(libs.spring.boot.starter.kafka)
+    implementation(libs.jooq.codegen)
 
-    implementation("net.javacrumbs.shedlock:shedlock-provider-redis-spring:7.10.1")
-    implementation("org.redisson:redisson-spring-boot-starter:4.8.0")
-    implementation("com.github.pagehelper:pagehelper-spring-boot-starter:4.1.1")
+    implementation(libs.shedlock.provider.redis.spring)
+    implementation(libs.redisson.spring.boot.starter)
+    implementation(libs.pagehelper.spring.boot.starter)
 
-    implementation("com.google.guava:guava:33.8.0-jre")
-    implementation("com.google.code.gson:gson:2.15.0")
-    implementation("org.apache.commons:commons-lang3:3.21.0")
-    implementation("org.apache.commons:commons-collections4:4.6.0")
-    implementation("org.apache.httpcomponents.client5:httpclient5-fluent:5.6.5")
-    implementation("org.glavo.kala:kala-common:0.85.0")
-    implementation("org.modelmapper:modelmapper:3.2.8")
-    implementation("cn.hutool.v7:hutool-all:7.0.0-M8")
-    implementation("com.alibaba.fastjson2:fastjson2-extension-spring6:2.0.66")
-    implementation("org.apache.fory:fory-json:1.7.7")
-    implementation("commons-io:commons-io:2.22.0")
-    implementation("com.github.houbb:sensitive-word:0.29.5")
-    implementation("com.fasterxml.uuid:java-uuid-generator:5.2.0")
-    implementation("com.j2html:j2html:1.6.0")
-    implementation("org.joda:joda-money:2.0.3")
-    implementation("dev.failsafe:failsafe:3.3.2")
-    implementation("cn.idev.excel:fastexcel:1.3.0")
-    implementation("org.apache.fesod:fesod-sheet:2.1.0-incubating")
-    implementation("io.netty:netty-all:4.2.20.Final")
-    implementation("com.baomidou:mybatis-plus-core:3.5.18.1")
-    implementation("net.logstash.logback:logstash-logback-encoder:9.0")
+    implementation(libs.guava)
+    implementation(libs.gson)
+    implementation(libs.commons.lang3)
+    implementation(libs.commons.collections4)
+    implementation(libs.httpclient5.fluent)
+    implementation(libs.kala.common)
+    implementation(libs.modelmapper)
+    implementation(libs.hutool.all)
+    implementation(libs.fastjson2.extension.spring6)
+    implementation(libs.fory.json)
+    implementation(libs.commons.io)
+    implementation(libs.sensitive.word)
+    implementation(libs.java.uuid.generator)
+    implementation(libs.j2html)
+    implementation(libs.joda.money)
+    implementation(libs.failsafe)
+    implementation(libs.fastexcel)
+    implementation(libs.fesod.sheet)
+    implementation(libs.netty.all)
+    implementation(libs.mybatis.plus.core)
+    implementation(libs.logstash.logback.encoder)
 
-    runtimeOnly("org.postgresql:postgresql:42.7.14")
+    runtimeOnly(libs.postgresql)
 
-    annotationProcessor("org.projectlombok:lombok:1.18.48")
-    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    annotationProcessor(libs.lombok)
+    annotationProcessor(libs.spring.boot.configuration.processor)
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation(libs.spring.boot.starter.test)
 }
 
 tasks.withType<BootJar> {

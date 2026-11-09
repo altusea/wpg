@@ -1,0 +1,82 @@
+[versions]
+springBoot = "4.1.2"
+dependencyManagement = "1.1.7"
+flyway = "13.12.1"
+jooq = "3.21.9"
+shedlock = "7.10.1"
+redisson = "4.8.0"
+pagehelper = "4.1.1"
+guava = "33.8.0-jre"
+gson = "2.15.0"
+commonsLang3 = "3.21.0"
+commonsCollections4 = "4.6.0"
+httpclient5 = "5.6.5"
+kala = "0.85.0"
+modelmapper = "3.2.8"
+hutool = "7.0.0-M8"
+fastjson2 = "2.0.66"
+fory = "1.7.7"
+commonsIo = "2.22.0"
+sensitiveWord = "0.29.5"
+javaUuidGenerator = "5.2.0"
+j2html = "1.6.0"
+jodaMoney = "2.0.3"
+failsafe = "3.3.2"
+fastexcel = "1.3.0"
+fesod = "2.1.0-incubating"
+netty = "4.2.20.Final"
+mybatisPlus = "3.5.18.1"
+logstashLogbackEncoder = "9.0"
+postgresql = "42.7.14"
+lombok = "1.18.48"
+
+[libraries]
+# Spring Boot starters (versions from the Spring Boot bom)
+spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
+spring-boot-starter-jooq = { module = "org.springframework.boot:spring-boot-starter-jooq" }
+spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
+spring-boot-starter-data-redis = { module = "org.springframework.boot:spring-boot-starter-data-redis" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
+spring-boot-starter-kafka = { module = "org.springframework.boot:spring-boot-starter-kafka" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
+
+jooq-codegen = { module = "org.jooq:jooq-codegen", version.ref = "jooq" }
+
+flyway-database-postgresql = { module = "org.flywaydb:flyway-database-postgresql", version.ref = "flyway" }
+
+shedlock-provider-redis-spring = { module = "net.javacrumbs.shedlock:shedlock-provider-redis-spring", version.ref = "shedlock" }
+redisson-spring-boot-starter = { module = "org.redisson:redisson-spring-boot-starter", version.ref = "redisson" }
+pagehelper-spring-boot-starter = { module = "com.github.pagehelper:pagehelper-spring-boot-starter", version.ref = "pagehelper" }
+
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commonsLang3" }
+commons-collections4 = { module = "org.apache.commons:commons-collections4", version.ref = "commonsCollections4" }
+httpclient5-fluent = { module = "org.apache.httpcomponents.client5:httpclient5-fluent", version.ref = "httpclient5" }
+kala-common = { module = "org.glavo.kala:kala-common", version.ref = "kala" }
+modelmapper = { module = "org.modelmapper:modelmapper", version.ref = "modelmapper" }
+hutool-all = { module = "cn.hutool.v7:hutool-all", version.ref = "hutool" }
+fastjson2-extension-spring6 = { module = "com.alibaba.fastjson2:fastjson2-extension-spring6", version.ref = "fastjson2" }
+fory-json = { module = "org.apache.fory:fory-json", version.ref = "fory" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+sensitive-word = { module = "com.github.houbb:sensitive-word", version.ref = "sensitiveWord" }
+java-uuid-generator = { module = "com.fasterxml.uuid:java-uuid-generator", version.ref = "javaUuidGenerator" }
+j2html = { module = "com.j2html:j2html", version.ref = "j2html" }
+joda-money = { module = "org.joda:joda-money", version.ref = "jodaMoney" }
+failsafe = { module = "dev.failsafe:failsafe", version.ref = "failsafe" }
+fastexcel = { module = "cn.idev.excel:fastexcel", version.ref = "fastexcel" }
+fesod-sheet = { module = "org.apache.fesod:fesod-sheet", version.ref = "fesod" }
+netty-all = { module = "io.netty:netty-all", version.ref = "netty" }
+mybatis-plus-core = { module = "com.baomidou:mybatis-plus-core", version.ref = "mybatisPlus" }
+logstash-logback-encoder = { module = "net.logstash.logback:logstash-logback-encoder", version.ref = "logstashLogbackEncoder" }
+
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "dependencyManagement" }
+flyway = { id = "org.flywaydb.flyway", version.ref = "flyway" }
