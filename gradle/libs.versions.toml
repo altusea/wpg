@@ -22,7 +22,6 @@ javaUuidGenerator = "5.2.0"
 j2html = "1.6.0"
 jodaMoney = "2.0.3"
 failsafe = "3.3.2"
-fastexcel = "1.3.0"
 fesod = "2.1.0-incubating"
 netty = "4.2.20.Final"
 mybatisPlus = "3.5.18.1"
@@ -66,7 +65,6 @@ java-uuid-generator = { module = "com.fasterxml.uuid:java-uuid-generator", versi
 j2html = { module = "com.j2html:j2html", version.ref = "j2html" }
 joda-money = { module = "org.joda:joda-money", version.ref = "jodaMoney" }
 failsafe = { module = "dev.failsafe:failsafe", version.ref = "failsafe" }
-fastexcel = { module = "cn.idev.excel:fastexcel", version.ref = "fastexcel" }
 fesod-sheet = { module = "org.apache.fesod:fesod-sheet", version.ref = "fesod" }
 netty-all = { module = "io.netty:netty-all", version.ref = "netty" }
 mybatis-plus-core = { module = "com.baomidou:mybatis-plus-core", version.ref = "mybatisPlus" }

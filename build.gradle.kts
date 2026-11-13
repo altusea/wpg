@@ -65,7 +65,6 @@ dependencies {
     implementation(libs.j2html)
     implementation(libs.joda.money)
     implementation(libs.failsafe)
-    implementation(libs.fastexcel)
     implementation(libs.fesod.sheet)
     implementation(libs.netty.all)
     implementation(libs.mybatis.plus.core)
