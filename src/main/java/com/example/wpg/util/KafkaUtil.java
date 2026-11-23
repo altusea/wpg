@@ -1,7 +1,7 @@
 package com.example.wpg.util;
 
 import org.apache.kafka.common.protocol.ApiKeys;
-import org.apache.kafka.common.utils.AppInfoParser;
+import org.apache.kafka.common.utils.internals.AppInfoParser;
 
 public class KafkaUtil {
 
