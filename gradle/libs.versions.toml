@@ -1,7 +1,7 @@
 [versions]
 springBoot = "4.1.2"
 dependencyManagement = "1.1.7"
-flyway = "13.12.2"
+flyway = "13.13.0"
 jooq = "3.21.9"
 shedlock = "7.11.0"
 redisson = "4.8.0"
